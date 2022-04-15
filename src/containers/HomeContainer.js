@@ -1,3 +1,9 @@
+import { Header } from "../layouts/index";
 export default function HomeContainer() {
-  return <div>this is HomeContainer</div>;
+  return (
+    <div>
+      <Header />
+      this is HomeContainer
+    </div>
+  );
 }
