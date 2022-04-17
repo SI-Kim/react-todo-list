@@ -1,9 +1,13 @@
+import styled from "styled-components";
+
 export default function Header() {
+
+  const HeaderBox = styled.div`
+    border: solid 1px;
+    background-color: lightgrey;
+  `
   return (
-    <div
-      className="header"
-      style={{ border: "solid 1px", backgroundColor: "lightgray" }}
-    >
+    <HeaderBox>
       <span className="logo">logo</span>
       &nbsp;&nbsp;&nbsp;this is header area.
       <nav className="nav">
@@ -13,6 +17,6 @@ export default function Header() {
           <li>3</li>
         </ul>
       </nav>
-    </div>
+    </HeaderBox>
   );
 }
